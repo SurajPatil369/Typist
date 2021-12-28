@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>typing master</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');
+
+        * {
+            box-sizing: border-box;
+            /* padding: 0; */
+            margin: auto;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            /* align-items: flex-start; */
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Baloo Bhai 2', cursive;
+            background-color: #D1D5DB;
+        }
+
+        .quote-display-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: -8rem;
+            border: 2px solid black;
+            height: 50%;
+            width: 50%;
+            max-height: 100%;
+            max-width: 50%;
+
+            padding: 1rem;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+            background-color: #BFDBFE;
+           
+        
+            /* align-items: center; */
+        }
+
+        .input-text {
+            height: 12rem;
+            width: 90%;
+            border: 1px solid black;
+            padding: 1rem;
+            border-radius: 10px;
+            resize: none;
+            font-size: large;
+            font-weight: bold;
+            background-color: #FDF2F8;
+            font-family: 'Baloo Bhai 2', cursive;
+            ;
+
+        }
+
+        .input-text:focus {
+            border-color: 2px solid black;
+        }
+
+        .quote-display {
+            margin-left: calc(1px + 5% + 1rem);
+            margin-right: calc(1px + 5% + 1rem);
+            padding-bottom: 0.5rem;
+            font-size: large;
+            font-weight: bold;
+            /* color: white; */
+
+        }
+
+        .correct {
+            color: green;
+            
+        }
+
+        .wrong {
+            color: red;
+            text-decoration: underline;
+        }
+        h1{
+            /* display: inline-block; */
+            margin-top: 3rem;
+            font-size: 4rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="counter"></h1>
+    <div class="quote-display-container">
+        <div class="quote-display" id="quoteDisplay">
+        </div>
+
+        <textarea name="input" class="input-text" id="inputText" autofocus></textarea>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
